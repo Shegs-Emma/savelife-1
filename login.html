@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save A Life | LOGIN </title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Life Save</label>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+           
+        </ul>
+    </nav>
+    <div class="container">
+       <div id="modal-login">
+     <h1 class="label">Volunteer Login</h1>
+     <form class="login_form" id="form-login"  name="form" onsubmit="validated()">
+  
+         <div class="font">Email</div>
+         <input autocomplete="off" type="email" name="email" id="login-email">
+         <div id="user_error">Please Enter Your Email Address</div>
+         <div class="font font2">Password</div>
+         <input type="password" name="password" id="login-password">
+         <div id="pass_error">Please Enter your password</div>
+        
+         <button id="Lsubmit" value="submit">Login</button>
+
+         
+     </form>
+
+
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB7W78Nu0g_GaK34n9tycgngQvpQddXtTU",
+            authDomain: "savealife-2e8a1.firebaseapp.com",
+            databaseURL: "https://savealife-2e8a1.firebaseio.com",
+            projectId: "savealife-2e8a1",
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      
+    
+        //make auth and fireestore refernces
+        const auth= firebase.auth();
+        const db=firebase.firestore();
+    
+        //update firestore settings
+        db.settings({timestampsInSnapshots: true })
+    </script>
+    </script>
+    <script src="login.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

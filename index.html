@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save A Life | HOME</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Life Save</label>
+
+        <ul>
+            <li><a class="active" a href="#">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#hospital">Hospitals</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+    <header>
+        JOIN US ON THE QUEST TO SAVE LIVES
+
+    </header>
+
+    <div class="container">
+        <section id="about-us">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <h5>Mission</h5>
+                        <p>We offer 24 hours service for all hospitals in our network, and we are able to provide access
+                            to safe blood in the event of an emergency or non-availability of a rare blood type.</p>
+
+                    </div>
+                </div>
+               
+
+                      <div class="column">
+                        <div class="card">
+                        <h5>Vision</h5>
+                        <P>To build, mould and shape a generation towards excellence and good health infrastructures.
+                            We collaborates with hospitals for good health care.</P>
+
+                    </div>
+                      </div>
+
+               <div class="column">
+                <div class="card">
+                        <h5>Core Values</h5>
+                        <p>We believe that no African should die from poverty and shortage of essential medical
+                            products, and we are on a mission to solve it.</p>
+
+                    </div>
+                </div>
+            </div>
+            
+       
+    </div>
+
+   
+    
+    </div>
+    
+   
+<div class="art" id="volunteer">
+<h4 id="get"> Volunteer to Save A Life.</h4>
+<div class="content">
+    <button id="show-modal">Volunteer</button>
+</div> 
+</section>
+
+<div class="overlay overlay--hidden"></div>
+<div class="modal modal--hidden">
+<div id="modal-signup">
+<div class="modal__contents">
+  <div class="modal__close-bar">
+    <span>X</span>
+  </div>
+  <p>Kindly submit details here to volunteer!!!</p>
+  <form id="volunteer-form">
+     
+  <input autocomplete="off" type="email" name="" id="signup-email" placeholder="Enter Email Address" required   >
+  <input type="password" name="" id="signup-password" placeholder="Enter password" required >
+
+   <button id="submit" value="submit">Register</button> 
+
+</div> 
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+<div class="how-section1" id="hospital">
+    <div class="row">
+        <div class="col-md-6 how-img">
+            <img src="images/pic2.jpg" class="rounded-circle img-fluid" alt=""/>
+        </div>
+        <div class="col-md-6" id="text">
+            <h4>Find collaborating Hospitals</h4>
+                        <h4 class="subheading">Critical supplies you need round the clock, faster, cheaper, and safer..</h4>
+        <p class="text-muted">We use the power of technology to inspire voluntary blood donors, we gather inventory from oxygen manufacturers, blood banks and other supplier partners across the country.
+            SaveaLife is faster because you can discover all critical supplies on our platform in just 5 minutes. We deliver the order to the hospital in under 45 minutes.</p>
+        </div>
+    </div>
+</div>
+
+    
+ <!-- Footer -->
+ <div class="fixed-footer">
+    
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://savealife.com/"> SaveALife</a>
+    </div>
+    
+  
+  </footer>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyB7W78Nu0g_GaK34n9tycgngQvpQddXtTU",
+        authDomain: "savealife-2e8a1.firebaseapp.com",
+        databaseURL: "https://savealife-2e8a1.firebaseio.com",
+        projectId: "savealife-2e8a1",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  
+
+    //make auth and fireestore refernces
+    const auth= firebase.auth();
+    const db=firebase.firestore();
+
+    //update firestore settings
+    db.settings({timestampsInSnapshots: true })
+</script>
+<script src="jquery.js"></script>
+<script src="js/script.js"></script>
+<script src="js/auth.js"></script>
+</body>
+
+</html>

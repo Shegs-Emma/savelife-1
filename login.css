@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin: 0;
+   
+  
+}
+.container{
+    position: relative;
+    margin-left:28rem;
+    width:400px;
+    height: auto;
+    background: #dedede;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.label{
+    padding:20px;
+    font-size:35px;
+    font-weight:bold;
+    color:#130f40;
+}
+.login-form{
+    padding:30px;
+}
+.login_form .font{
+    font-size:18px;
+    color:#130f40;
+    margin:10px 0;
+}
+.login_form button{
+    margin: 45px 0 30px 0;
+    height:45px;
+    width:365px;
+    font-size: 20px;
+    cursor: pointer;}
+
+    .login_form #user_error,.login_form #pass_error{
+        margin-top: 5px;
+        width:345px;
+        font-size: 15px;
+        color:#c62828;
+        background: rgba(225,0,0,0.1);
+        border:1px solid;
+        border-radius: 3px;
+        text-align: center;
+        display: none;
+    }
+    @media screen and (max-width:600px){
+       
+        .login_form,.container{
+         flex-direction: column;
+         display: block;
+         margin: 10px;
+         padding: 10px;
+         
+            
+        }
+        .login_form button{
+          width:250px;
+          text-align: center;
+        }
+       .container{
+           width:300px;
+           background-color: gray;
+       }
+        }
+        

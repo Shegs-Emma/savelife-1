@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Life Save</label>
+
+        <ul>
+            <li><a class="active" a href="#">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#hospital">Hospitals</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+    <!-- <div style="overflow-x:auto;"> -->
+    <table class="table table-bordered mt-6">
+        <thead>
+          <tr>
+            <th>Name<span class="sort-btn" id="name">
+                <i class="fas fa-sort"></i>
+            </span></th>
+            <th>Gender <span class="sort-btn" id="gender">
+                <i class="fas fa-sort"></i>
+            </span></th>
+            </th>
+            <th>Phone Number<span class="sort-btn" id="phoneno">
+              <i class="fas fa-sort"></i>
+          </span></th></th>
+            <th>Age<span class="sort-btn" id="age">
+                <i class="fas fa-sort"></i>
+            </span></th></th>
+            <th>State Of Residence<span class="sort-btn" id="state">
+                <i class="fas fa-sort"></i>
+            </span></th></th>
+            <th>Blood Type<span class="sort-btn" id="blood">
+                <i class="fas fa-sort"></i>
+            </span></th></th> 
+            <th>Health Status<span class="sort-btn" id="health">
+              <i class="fas fa-sort"></i>
+          </span></th></th>
+            <th>Date Of Appointment<span class="sort-btn" id="date">
+                <i class="fas fa-sort"></i>
+            </span></th></th>
+            <th>Blood Bank<span class="sort-btn" id="bloodBank">
+                <i class="fas fa-sort"></i>
+            </span></th></th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="detail-list">
+        
+        </tbody>
+      </table>
+     
+      <script src="js/admin.js"></script>
+</body>
+</html>
